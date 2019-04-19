@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editing Photo <%=photo.title%></title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+
+	<h1>Editing Photo <%=photo.title%></h1>
+
+	<form action="/photos/<%=photo._id%>?_method=PUT" method="POST">
+		<input type="text" name="title" value="<%=photo.title%>">Title</input><br>
+		<input type="text" name="url" value="<%=photo.url%>">URL</input><br>
+		<input type="text" name="description" value="<%=photo.description%>">Description</input><br>
+		<button type="submit">Submit</button>
+	</form>
+
+</body>
+</html>

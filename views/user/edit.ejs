@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editing User <%=user.username%></title>
+</head>
+<body>
+
+	<h1>Editing User <%=user.username%></h1>
+
+
+	<form action="/users/<%=user._id%>?_method=PUT" method="POST">
+		<input type="text" name="username" value="<%=user.username%>">Username</input>
+		<button type="submit">Submit</button>
+	</form>
+
+</body>
+</html>

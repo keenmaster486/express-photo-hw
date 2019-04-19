@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users Index</title>
+</head>
+<body>
+
+	<h1>Users Index</h1>
+
+	<ul>
+		<%	for (let i = 0; i < users.length; i++) {	%>
+				<li>
+					<a href="/users/<%=users[i]._id%>"><%=users[i].username%></a>
+				</li>
+		<%	}	%>
+	</ul>
+
+	<a href="/users/new">Create a new user</a>
+	<a href="/">Back to root index</a>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%=photo.title%></title>
+</head>
+<body>
+
+	<h1><%=photo.title%></h1>
+
+	<img src="<%=photo.url%>">
+
+	<p>
+		<%=photo.description%>
+	</p>
+
+	<a href="/photos/<%=photo._id%>/edit">Edit this photo</a>
+
+	<a href="/photos">Index of ALL THE PHOTOS</a>
+
+</body>
+</html>

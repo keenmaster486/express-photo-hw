@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%=user.username%></title>
+</head>
+<body>
+
+	<h1><%=user.username%></h1>
+
+	<h2>List of this user's photos:</h2>
+
+	<ul>
+		<%	for (let i = 0; i < user.photos.length; i++) { %>
+				<li>
+					<a href="/photos/<%=user.photos[i]%>"><%=photos[i].title%></a>
+				</li>
+		<%	}	%>
+	</ul>
+
+	<a href="/users/<%=user._id%>/edit">Edit this user</a>
+
+	<a href="/users">Back to users index</a>
+
+</body>
+</html>
